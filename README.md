@@ -6,7 +6,7 @@ para gerar a interface web do Swagger para teste e documentação
 de APIs REST.
 
 Inclui o módulo [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc)
-para permite especificar os endpoints implementados
+para permitir especificar os endpoints implementados
 com expressjs por meio de comentários [JSDoc](https://jsdoc.app/).
 
 ## Instalação
