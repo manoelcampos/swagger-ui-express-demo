@@ -9,4 +9,18 @@ const swaggerDefinition = {
   servers: ["http://localhost:8080"]
 }
 
-module.exports = swaggerDefinition
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerOptions = {
+  swaggerDefinition,
+  apis: ["./routes/*.js"]
+};
+
+/**
+ * Configura o Swagger UI para a aplicação expressjs.
+ * @param {express} app Aplicação express
+ */
+const setup = app => app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swaggerOptions)));
+
+module.exports = setup;
