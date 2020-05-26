@@ -6,7 +6,13 @@
   "scripts": {
     "start": "node app.js"
   },
-  "keywords": ["swagger", "swagger ui", "express", "hello world", "example"],
+  "keywords": [
+    "swagger",
+    "swagger ui",
+    "express",
+    "hello world",
+    "example"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
